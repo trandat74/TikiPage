@@ -14,7 +14,6 @@ function App() {
   const path = useRouteMatch()
   const handleSearch = (history) => {
     console.log(history)
-
   }
 
   return (
@@ -26,7 +25,7 @@ function App() {
         {/* <Route path='/help' component={Help} exact></Route> */}
         <Route path='/tikipage' component={Home} exact></Route>
         <Route path='/cart' component={Cart} exact ></Route>
-        <Route path={`${search.url}product/:productId`} exact component={ProductDetail} />
+        <Route path={`${search.url}tikipage/product/:productId`} exact component={ProductDetail} />
 
       </Switch>
       {/* <Product /> */}

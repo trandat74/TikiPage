@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { useHistory } from 'react-router';
+import { useHistory, useRouteMatch } from 'react-router';
 import { STATIC_DOMAIN, THUMNAIL_DEFAULT } from '../../../constants';
 import './productview.scss';
 
@@ -10,13 +10,20 @@ ProductView.propTypes = {
 ProductView.defaultProps = {
     data: [],
 }
+
+
+// // {`${match.url}:productId`} 
+// const search = useRouteMatch();
+
+
 function ProductView(props) {
+    const match = useRouteMatch();
+    console.log(match.url)
     const history= useHistory();
-   
     const { data } = props;
     const handleDetail=(item)=>{
-       
-        history.push(`/product/${item.id}`)
+    //    <Route path={`${search.url}product/:productId`} exact component={ProductDetail} />
+        history.push(`${match.url}/product/${item.id}`)
     }
     return (
         <div  className="product__list">
