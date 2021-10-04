@@ -23,8 +23,8 @@ function App() {
     <div className="App">
       <Header onSearch={handleSearch} />
       <Switch>
-        <Route path='/help' component={Help} exact></Route>
-        <Route path='/' component={Home} exact></Route>
+        {/* <Route path='/help' component={Help} exact></Route> */}
+        <Route path='/tikipage' component={Home} exact></Route>
         <Route path='/cart' component={Cart} exact ></Route>
         <Route path={`${search.url}product/:productId`} exact component={ProductDetail} />
 

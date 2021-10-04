@@ -23,7 +23,7 @@ function Header(props) {
   return (
     <header className="header">
       <div className="header__container">
-        <a href="/" className="logo">
+        <a href="/tikipage" className="logo">
           <img src="https://salt.tikicdn.com/ts/upload/ae/f5/15/2228f38cf84d1b8451bb49e2c4537081.png" alt="logo" />
           <img src="https://salt.tikicdn.com/ts/upload/e5/1d/22/61ff572362f08ead7f34ce410a4a6f96.png" alt="subLogo" />
         </a>
