@@ -1,0 +1,22 @@
+.category__filter {
+    padding: 0px 20px;
+    h5 {
+       
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        color: #1976d2;
+    }
+    .category__list {
+        list-style: none;
+        padding: 0;
+        .category__item {
+            line-height: 30px;
+            cursor: pointer;
+            font-size: 14px;
+            &:hover {
+                color: #1976d2;
+            }
+        }
+    }
+}

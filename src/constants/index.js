@@ -1,0 +1,2 @@
+// Xuất
+export * from './common';

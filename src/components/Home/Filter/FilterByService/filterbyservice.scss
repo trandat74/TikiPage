@@ -1,0 +1,28 @@
+.service__filter {
+    padding: 0px 20px;
+    & h5 {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        color: #1976d2;
+    }
+    .service__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        .service__item {
+            font-size: 14px;
+            column-gap: 5px;
+            display: flex;
+            align-items: center;
+            .service__img {
+                width: 80px;
+            }
+            & input {
+                cursor: pointer;
+                transform: scale(1.4);
+                 
+            }
+        }
+    }
+}
